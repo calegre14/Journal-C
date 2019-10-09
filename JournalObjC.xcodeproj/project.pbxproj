@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		286099C9234D660200D3B8E9 /* CMAEntryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286099C8234D660200D3B8E9 /* CMAEntryDetailViewController.m */; };
 		2885A793234BDD06002D3101 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885A792234BDD06002D3101 /* AppDelegate.m */; };
 		2885A796234BDD06002D3101 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885A795234BDD06002D3101 /* SceneDelegate.m */; };
 		2885A799234BDD06002D3101 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885A798234BDD06002D3101 /* ViewController.m */; };
@@ -14,9 +15,14 @@
 		2885A79E234BDD07002D3101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2885A79D234BDD07002D3101 /* Assets.xcassets */; };
 		2885A7A1234BDD07002D3101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2885A79F234BDD07002D3101 /* LaunchScreen.storyboard */; };
 		2885A7A4234BDD07002D3101 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885A7A3234BDD07002D3101 /* main.m */; };
+		2885A7AE234BDD5C002D3101 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885A7AD234BDD5C002D3101 /* Entry.m */; };
+		2885A7B3234BE00B002D3101 /* CMAEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2885A7B2234BE00B002D3101 /* CMAEntryController.m */; };
+		28D0F88C234D63CC002C647D /* CMAEntryListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D0F88B234D63CC002C647D /* CMAEntryListTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		286099C7234D660200D3B8E9 /* CMAEntryDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMAEntryDetailViewController.h; sourceTree = "<group>"; };
+		286099C8234D660200D3B8E9 /* CMAEntryDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMAEntryDetailViewController.m; sourceTree = "<group>"; };
 		2885A78E234BDD06002D3101 /* JournalObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JournalObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2885A791234BDD06002D3101 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2885A792234BDD06002D3101 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +35,12 @@
 		2885A7A0234BDD07002D3101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2885A7A2234BDD07002D3101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2885A7A3234BDD07002D3101 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2885A7AC234BDD5C002D3101 /* Entry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
+		2885A7AD234BDD5C002D3101 /* Entry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
+		2885A7B1234BE00B002D3101 /* CMAEntryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMAEntryController.h; sourceTree = "<group>"; };
+		2885A7B2234BE00B002D3101 /* CMAEntryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMAEntryController.m; sourceTree = "<group>"; };
+		28D0F88A234D63CC002C647D /* CMAEntryListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMAEntryListTableViewController.h; sourceTree = "<group>"; };
+		28D0F88B234D63CC002C647D /* CMAEntryListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMAEntryListTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,19 +73,75 @@
 		2885A790234BDD06002D3101 /* JournalObjC */ = {
 			isa = PBXGroup;
 			children = (
+				2885A7AF234BDFDF002D3101 /* Controllers */,
+				2885A7AB234BDD43002D3101 /* Model */,
+				2885A7AA234BDD39002D3101 /* Resources */,
+				2885A797234BDD06002D3101 /* ViewController.h */,
+				2885A798234BDD06002D3101 /* ViewController.m */,
+				28D0F889234D638B002C647D /* Views */,
+			);
+			path = JournalObjC;
+			sourceTree = "<group>";
+		};
+		2885A7AA234BDD39002D3101 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				2885A791234BDD06002D3101 /* AppDelegate.h */,
 				2885A792234BDD06002D3101 /* AppDelegate.m */,
 				2885A794234BDD06002D3101 /* SceneDelegate.h */,
 				2885A795234BDD06002D3101 /* SceneDelegate.m */,
-				2885A797234BDD06002D3101 /* ViewController.h */,
-				2885A798234BDD06002D3101 /* ViewController.m */,
-				2885A79A234BDD06002D3101 /* Main.storyboard */,
 				2885A79D234BDD07002D3101 /* Assets.xcassets */,
 				2885A79F234BDD07002D3101 /* LaunchScreen.storyboard */,
 				2885A7A2234BDD07002D3101 /* Info.plist */,
 				2885A7A3234BDD07002D3101 /* main.m */,
 			);
-			path = JournalObjC;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2885A7AB234BDD43002D3101 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2885A7AC234BDD5C002D3101 /* Entry.h */,
+				2885A7AD234BDD5C002D3101 /* Entry.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2885A7AF234BDFDF002D3101 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				28D0F888234D60C7002C647D /* ViewControllers */,
+				2885A7B0234BDFE7002D3101 /* ModelControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2885A7B0234BDFE7002D3101 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2885A7B1234BE00B002D3101 /* CMAEntryController.h */,
+				2885A7B2234BE00B002D3101 /* CMAEntryController.m */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		28D0F888234D60C7002C647D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				28D0F88A234D63CC002C647D /* CMAEntryListTableViewController.h */,
+				28D0F88B234D63CC002C647D /* CMAEntryListTableViewController.m */,
+				286099C7234D660200D3B8E9 /* CMAEntryDetailViewController.h */,
+				286099C8234D660200D3B8E9 /* CMAEntryDetailViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		28D0F889234D638B002C647D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2885A79A234BDD06002D3101 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +215,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2885A799234BDD06002D3101 /* ViewController.m in Sources */,
+				2885A7AE234BDD5C002D3101 /* Entry.m in Sources */,
+				28D0F88C234D63CC002C647D /* CMAEntryListTableViewController.m in Sources */,
+				2885A7B3234BE00B002D3101 /* CMAEntryController.m in Sources */,
 				2885A793234BDD06002D3101 /* AppDelegate.m in Sources */,
 				2885A7A4234BDD07002D3101 /* main.m in Sources */,
+				286099C9234D660200D3B8E9 /* CMAEntryDetailViewController.m in Sources */,
 				2885A796234BDD06002D3101 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +363,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5XC6N4RBRH;
-				INFOPLIST_FILE = JournalObjC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JournalObjC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +380,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5XC6N4RBRH;
-				INFOPLIST_FILE = JournalObjC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JournalObjC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
